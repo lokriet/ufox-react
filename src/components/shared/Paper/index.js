@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const Paper = styled.div`
     background: radial-gradient(circle, rgba(10,27,76,0.8) 0%, rgba(6,17,61,0.8) 100%);
     border-radius: 4px;
-    box-shadow: 2px 2px 3px 2px #2d6da880;
+    box-shadow:  0px 0px 10px 2px #2d6da850;
     padding: 20px;
     margin: 20px auto;
     width: 80%;
