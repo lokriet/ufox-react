@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/ufox-react/static/css/main.4cc8e4ac.chunk.css",
+    "main.js": "/ufox-react/static/js/main.0923bd7f.chunk.js",
+    "main.js.map": "/ufox-react/static/js/main.0923bd7f.chunk.js.map",
+    "runtime-main.js": "/ufox-react/static/js/runtime-main.6730c4dd.js",
+    "runtime-main.js.map": "/ufox-react/static/js/runtime-main.6730c4dd.js.map",
+    "static/js/2.ce7b88b8.chunk.js": "/ufox-react/static/js/2.ce7b88b8.chunk.js",
+    "static/js/2.ce7b88b8.chunk.js.map": "/ufox-react/static/js/2.ce7b88b8.chunk.js.map",
+    "index.html": "/ufox-react/index.html",
+    "precache-manifest.e33e2a0fcc95c34251aa24e26249dc98.js": "/ufox-react/precache-manifest.e33e2a0fcc95c34251aa24e26249dc98.js",
+    "service-worker.js": "/ufox-react/service-worker.js",
+    "static/css/main.4cc8e4ac.chunk.css.map": "/ufox-react/static/css/main.4cc8e4ac.chunk.css.map",
+    "static/js/2.ce7b88b8.chunk.js.LICENSE.txt": "/ufox-react/static/js/2.ce7b88b8.chunk.js.LICENSE.txt",
+    "static/media/backgroundSky.jpg": "/ufox-react/static/media/backgroundSky.700e3840.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6730c4dd.js",
+    "static/js/2.ce7b88b8.chunk.js",
+    "static/css/main.4cc8e4ac.chunk.css",
+    "static/js/main.0923bd7f.chunk.js"
+  ]
+}
