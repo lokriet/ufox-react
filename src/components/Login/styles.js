@@ -110,18 +110,19 @@ export const LoginInput = ({ ...otherProps }) => {
 const buttonClasses = makeStyles({
     root: {
         background: 'linear-gradient(90deg, rgba(10,27,76,1) 0%, rgba(6,17,61,1) 100%)',
-        opacity: 0.7,
         color: '#fffffb',
+        opacity: 0.7,
         transition: 'all 300ms ease-in',
+        width: '100%',
         '&:hover': {
+            animation: `$pulsate 3s ease-in-out infinite`,
             background: 'linear-gradient(90deg, rgba(10,27,76,1) 0%, rgba(6,17,61,1) 100%)',
-            opacity: 0.9,
             color: '#fffc96',
-            animation: `$pulsate 3s ease-in-out infinite`
+            opacity: 0.9,
         },
         '& span': {
-            opacity: 1,
             letterSpacing: 1,
+            opacity: 1,
         },
     },
     "@keyframes pulsate": {

@@ -7,6 +7,7 @@ import {
     LoginInput,
     StyledParticles as Particles
 } from './styles';
+import Link from '../shared/Link';
 
 const Login = () => {
     const [formLeft, setFormLeft] = useState('60%');
@@ -24,7 +25,9 @@ const Login = () => {
                 <LoginForm left={ formLeft }>
                     <LoginInput label="Login" />
                     <LoginInput label="Password" />
-                    <LoginButton>Enter</LoginButton>
+                    <Link to="/dashboard" noUnderline>
+                        <LoginButton>Enter</LoginButton>
+                    </Link>
                 </LoginForm>
             </Background>
         </>
