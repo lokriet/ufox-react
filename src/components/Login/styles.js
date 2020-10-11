@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import Particles from 'react-tsparticles';
 import img from '../../assets/img/backgroundSky.jpg';
 
 export const Background = styled.div`
@@ -16,6 +17,26 @@ export const Background = styled.div`
     background-position: 80% 100%;
     background-image: url(${img});
 `;
+
+const backgroundImageDimensions = {
+    width: 1000,
+    height: 563,
+    ratio: 1000 / 563
+};
+
+export const calculateFormLeft = backgroundElement => {
+    if (backgroundElement) {
+        const screenRect = backgroundElement.getBoundingClientRect();
+        const imageScaleFactor = Math.min(backgroundImageDimensions.width / screenRect.width, backgroundImageDimensions.height / screenRect.height);
+        const imageWidth = backgroundImageDimensions.width / imageScaleFactor;
+        const moonMiddleOnImage = imageWidth * 0.72;
+        const backgroundCutOffOnTheLeft = 0.8 * (imageWidth - screenRect.width);
+        const formLeft = Math.round(moonMiddleOnImage - backgroundCutOffOnTheLeft);
+
+        return `${formLeft}px`;
+    }
+    return '60%';
+};
 
 export const LoginForm = styled.form`
     position: fixed;
@@ -36,7 +57,7 @@ const inputClasses = makeStyles({
         marginBottom: 30,
         '& .MuiOutlinedInput-notchedOutline': {
             borderColor: '#ddd6d370',
-            transition: 'border-color 300ms ease-in',
+            transition: 'all 300ms ease-in',
         },
         '&:hover .MuiOutlinedInput-notchedOutline': {
             borderColor: '#fffc9680',
@@ -127,4 +148,74 @@ export const LoginButton = ({ ...otherProps }) => {
         { ...otherProps } />;
 };
 
-
+export const StyledParticles = () => (
+    <Particles
+        style={{
+            position: 'fixed',
+            top: '0',
+            left: '0',
+            width: '100%',
+            height: '100%'
+        }}
+        options={{
+            fpsLimit: 60,
+            interactivity: {
+                modes: {
+                    bubble: {
+                        distance: 400,
+                        duration: 2,
+                        opacity: 0.8,
+                        size: 40,
+                    },
+                },
+            },
+            particles: {
+                color: {
+                    value: "#fffc96",
+                },
+                shadow: {
+                    blur: 20,
+                    color: {
+                        value: "#fffc96"
+                    },
+                    enable: true,
+                    offset: {
+                        x: 0,
+                        y: 0
+                    }
+                },
+                links: {
+                    enable: false,
+                },
+                collisions: {
+                    enable: false,
+                },
+                move: {
+                    enable: true,
+                    random: true,
+                    speed: 1,
+                    direction: "top",
+                    out_mode: "out"
+                },
+                number: {
+                    density: {
+                    enable: false,
+                    },
+                    value: 100,
+                },
+                opacity: {
+                    random: true,
+                    value: 0.5,
+                },
+                shape: {
+                    type: "circle",
+                },
+                size: {
+                    random: true,
+                    value: 15,
+                },
+            },
+            detectRetina: true,
+        }}
+    />
+);
