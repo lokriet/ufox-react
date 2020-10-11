@@ -6,6 +6,7 @@ import Background from '../shared/Background';
 import Paper from '../shared/Paper';
 import Input from '../shared/Input';
 import { ReactComponent as EggIcon }  from '../../assets/img/eggIcon.svg';
+import { Yellow, White } from '../../constants/colors';
 
 const NewWikiButton = styled.button`
     border: none;
@@ -17,8 +18,8 @@ const NewWikiButton = styled.button`
     outline: none;
 
     &:hover svg {
-        fill: #fffc96 !important;
-        filter: drop-shadow( 0px 0px 5px #fffc96aa);
+        fill: ${Yellow} !important;
+        filter: drop-shadow( 0px 0px 5px ${Yellow}aa);
     }
 
     & span {
@@ -26,7 +27,7 @@ const NewWikiButton = styled.button`
     }
 
     &:hover span {
-        color: #fffc96;
+        color: ${Yellow};
     }
 
     ${props => props.extraStyles }
@@ -37,7 +38,7 @@ const Text = styled.p`
 `;
 
 const eggIconStyle = {
-    fill: 'white',
+    fill: White,
     width: 32,
     height: 32,
     marginRight: 10,

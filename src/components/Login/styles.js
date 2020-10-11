@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Particles from 'react-tsparticles';
+import { Yellow } from '../../constants/colors';
 import img from '../../assets/img/loginBackground.jpg';
 
 export const Background = styled.div`
@@ -60,13 +61,13 @@ const inputClasses = makeStyles({
             transition: 'all 300ms ease-in',
         },
         '&:hover .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#fffc9680',
+            borderColor: `${Yellow}80`,
             animation: `$pulsate 3s ease-in-out infinite`
         },
         '& .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline': {
-            borderColor: '#fffc96',
+            borderColor: Yellow,
             borderWidth: 1,
-            boxShadow: '0px 0px 10px 4px rgba(255,252,150,0.5)',
+            boxShadow: `0px 0px 10px 4px ${Yellow}80`,
             animation: 'unset'
         },
 
@@ -77,10 +78,10 @@ const inputClasses = makeStyles({
             transition: 'color 300ms ease-in,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms'
         },
         '&:hover .MuiFormLabel-root': {
-            color: '#fffc96'
+            color: Yellow
         },
         '& .Mui-focused.MuiFormLabel-root': {
-            color: '#fffc96'
+            color: Yellow
         },
 
         '& .MuiOutlinedInput-input': {
@@ -125,7 +126,7 @@ const buttonClasses = makeStyles({
         '&:hover': {
             animation: `$pulsate 3s ease-in-out infinite`,
             background: 'linear-gradient(90deg, rgba(10,27,76,1) 0%, rgba(6,17,61,1) 100%)',
-            color: '#fffc96',
+            color: Yellow,
             opacity: 0.9,
         },
         '& span': {
@@ -135,13 +136,13 @@ const buttonClasses = makeStyles({
     },
     "@keyframes pulsate": {
         "0%": {
-            textShadow: '0 0 20px #fffc96'
+            textShadow: `0 0 20px ${Yellow}`
         },
         "50%": {
-            textShadow: '0 0 6px #fffc96'
+            textShadow: `0 0 6px ${Yellow}`
         },
         "100%": {
-            textShadow: '0 0 20px #fffc96'
+            textShadow: `0 0 20px ${Yellow}`
         },
     }
 });
@@ -180,12 +181,12 @@ export const StyledParticles = () => (
             },
             particles: {
                 color: {
-                    value: "#fffc96",
+                    value: Yellow,
                 },
                 shadow: {
                     blur: 20,
                     color: {
-                        value: "#fffc96"
+                        value: Yellow
                     },
                     enable: true,
                     offset: {
