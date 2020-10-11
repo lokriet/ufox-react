@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { Background, LoginForm } from './styles';
+import { Background, LoginButton, LoginForm, LoginInput } from './styles';
 
 const backgroundImageDimensions = {
     width: 1000,
@@ -34,9 +34,9 @@ const Login = () => {
     return (
         <Background ref={ backgroundRef }>
             <LoginForm left={ formLeft }>
-                <input placeholder="login" />
-                <input placeholder="password" />
-                <button>Log In</button>
+                <LoginInput label="Login" />
+                <LoginInput label="Password" />
+                <LoginButton>Enter</LoginButton>
             </LoginForm>
         </Background>
     );
