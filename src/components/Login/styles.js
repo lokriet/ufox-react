@@ -4,7 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Particles from 'react-tsparticles';
-import img from '../../assets/img/backgroundSky.jpg';
+import img from '../../assets/img/loginBackground.jpg';
 
 export const Background = styled.div`
     height: 100vh;
@@ -72,6 +72,8 @@ const inputClasses = makeStyles({
 
         '& .MuiFormLabel-root': {
             color: '#ddd6d3',
+            fontFamily: '"Hi Melody", sans-serif',
+            fontSize: 26,
             transition: 'color 300ms ease-in,transform 200ms cubic-bezier(0.0, 0, 0.2, 1) 0ms'
         },
         '&:hover .MuiFormLabel-root': {
@@ -83,6 +85,9 @@ const inputClasses = makeStyles({
 
         '& .MuiOutlinedInput-input': {
             color: '#fffffb',
+            fontFamily: '"Hi Melody", sans-serif',
+            fontSize: 26,
+            padding: 14,
             transition: 'background 300ms ease-in'
         },
         '& .Mui-focused .MuiOutlinedInput-input': {
@@ -111,7 +116,10 @@ const buttonClasses = makeStyles({
     root: {
         background: 'linear-gradient(90deg, rgba(10,27,76,1) 0%, rgba(6,17,61,1) 100%)',
         color: '#fffffb',
+        fontFamily: '"Hi Melody", sans-serif',
+        fontSize: 24,
         opacity: 0.7,
+        padding: 0,
         transition: 'all 300ms ease-in',
         width: '100%',
         '&:hover': {
@@ -207,6 +215,11 @@ export const StyledParticles = () => (
                 opacity: {
                     random: true,
                     value: 0.5,
+                    anim: {
+                        enable: true,
+                        speed: 0.3,
+                        opacity_min: 0.2
+                    }
                 },
                 shape: {
                     type: "circle",

@@ -24,7 +24,7 @@ const Login = () => {
                 <Particles />
                 <LoginForm left={ formLeft }>
                     <LoginInput label="Login" />
-                    <LoginInput label="Password" />
+                    <LoginInput label="Password" type="password" />
                     <Link to="/dashboard" noUnderline>
                         <LoginButton>Enter</LoginButton>
                     </Link>
