@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ufox-react/static/css/main.4cc8e4ac.chunk.css",
-    "main.js": "/ufox-react/static/js/main.797060fb.chunk.js",
-    "main.js.map": "/ufox-react/static/js/main.797060fb.chunk.js.map",
+    "main.js": "/ufox-react/static/js/main.95ad0deb.chunk.js",
+    "main.js.map": "/ufox-react/static/js/main.95ad0deb.chunk.js.map",
     "runtime-main.js": "/ufox-react/static/js/runtime-main.6730c4dd.js",
     "runtime-main.js.map": "/ufox-react/static/js/runtime-main.6730c4dd.js.map",
     "static/js/2.1f449faf.chunk.js": "/ufox-react/static/js/2.1f449faf.chunk.js",
     "static/js/2.1f449faf.chunk.js.map": "/ufox-react/static/js/2.1f449faf.chunk.js.map",
     "index.html": "/ufox-react/index.html",
-    "precache-manifest.20d93310e5bfc99925810d859bcbff04.js": "/ufox-react/precache-manifest.20d93310e5bfc99925810d859bcbff04.js",
+    "precache-manifest.43dfb7fdd9cc329e42f94ca43b252126.js": "/ufox-react/precache-manifest.43dfb7fdd9cc329e42f94ca43b252126.js",
     "service-worker.js": "/ufox-react/service-worker.js",
     "static/css/main.4cc8e4ac.chunk.css.map": "/ufox-react/static/css/main.4cc8e4ac.chunk.css.map",
     "static/js/2.1f449faf.chunk.js.LICENSE.txt": "/ufox-react/static/js/2.1f449faf.chunk.js.LICENSE.txt",
@@ -18,6 +18,6 @@
     "static/js/runtime-main.6730c4dd.js",
     "static/js/2.1f449faf.chunk.js",
     "static/css/main.4cc8e4ac.chunk.css",
-    "static/js/main.797060fb.chunk.js"
+    "static/js/main.95ad0deb.chunk.js"
   ]
 }
