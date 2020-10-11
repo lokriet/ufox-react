@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/ufox-react/static/css/main.4cc8e4ac.chunk.css",
-    "main.js": "/ufox-react/static/js/main.95ad0deb.chunk.js",
-    "main.js.map": "/ufox-react/static/js/main.95ad0deb.chunk.js.map",
+    "main.css": "/ufox-react/static/css/main.9264416a.chunk.css",
+    "main.js": "/ufox-react/static/js/main.e1abebb1.chunk.js",
+    "main.js.map": "/ufox-react/static/js/main.e1abebb1.chunk.js.map",
     "runtime-main.js": "/ufox-react/static/js/runtime-main.6730c4dd.js",
     "runtime-main.js.map": "/ufox-react/static/js/runtime-main.6730c4dd.js.map",
-    "static/js/2.1f449faf.chunk.js": "/ufox-react/static/js/2.1f449faf.chunk.js",
-    "static/js/2.1f449faf.chunk.js.map": "/ufox-react/static/js/2.1f449faf.chunk.js.map",
+    "static/js/2.f92d7445.chunk.js": "/ufox-react/static/js/2.f92d7445.chunk.js",
+    "static/js/2.f92d7445.chunk.js.map": "/ufox-react/static/js/2.f92d7445.chunk.js.map",
     "index.html": "/ufox-react/index.html",
-    "precache-manifest.43dfb7fdd9cc329e42f94ca43b252126.js": "/ufox-react/precache-manifest.43dfb7fdd9cc329e42f94ca43b252126.js",
+    "precache-manifest.3e927602904aaf25986580f08c30aee5.js": "/ufox-react/precache-manifest.3e927602904aaf25986580f08c30aee5.js",
     "service-worker.js": "/ufox-react/service-worker.js",
-    "static/css/main.4cc8e4ac.chunk.css.map": "/ufox-react/static/css/main.4cc8e4ac.chunk.css.map",
-    "static/js/2.1f449faf.chunk.js.LICENSE.txt": "/ufox-react/static/js/2.1f449faf.chunk.js.LICENSE.txt",
-    "static/media/backgroundSky.jpg": "/ufox-react/static/media/backgroundSky.700e3840.jpg"
+    "static/css/main.9264416a.chunk.css.map": "/ufox-react/static/css/main.9264416a.chunk.css.map",
+    "static/js/2.f92d7445.chunk.js.LICENSE.txt": "/ufox-react/static/js/2.f92d7445.chunk.js.LICENSE.txt",
+    "static/media/eggIcon.5e3b03a3.svg": "/ufox-react/static/media/eggIcon.5e3b03a3.svg",
+    "static/media/loginBackground.jpg": "/ufox-react/static/media/loginBackground.700e3840.jpg",
+    "static/media/starsBackground.jpg": "/ufox-react/static/media/starsBackground.70b4ed72.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6730c4dd.js",
-    "static/js/2.1f449faf.chunk.js",
-    "static/css/main.4cc8e4ac.chunk.css",
-    "static/js/main.95ad0deb.chunk.js"
+    "static/js/2.f92d7445.chunk.js",
+    "static/css/main.9264416a.chunk.css",
+    "static/js/main.e1abebb1.chunk.js"
   ]
 }
