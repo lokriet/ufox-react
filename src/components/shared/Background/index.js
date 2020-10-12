@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
-import img from '../../../assets/img/starsBackground.jpg';
 import Particles from 'react-tsparticles';
+import img from 'assets/img/starsBackground.jpg';
 
 const BackgroundImage = styled.div`
     height: 100vh;

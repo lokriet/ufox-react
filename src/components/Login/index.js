@@ -7,7 +7,7 @@ import {
     LoginInput,
     StyledParticles as Particles
 } from './styles';
-import Link from '../shared/Link';
+import Link from 'components/shared/Link';
 
 const Login = () => {
     const [formLeft, setFormLeft] = useState('60%');

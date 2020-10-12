@@ -1,7 +1,7 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
-import { Yellow, White } from '../../../constants/colors';
+import { Yellow, White } from 'constants/colors';
 
 const inputClasses = makeStyles({
     root: {

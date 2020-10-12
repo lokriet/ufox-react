@@ -4,8 +4,8 @@ import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
 import Particles from 'react-tsparticles';
-import { Yellow } from '../../constants/colors';
-import img from '../../assets/img/loginBackground.jpg';
+import { Yellow } from 'constants/colors';
+import img from 'assets/img/loginBackground.jpg';
 
 export const Background = styled.div`
     height: 100vh;

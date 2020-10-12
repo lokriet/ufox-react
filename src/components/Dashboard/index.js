@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import Collapse from '@material-ui/core/Collapse';
-import Link from '../shared/Link';
-import Background from '../shared/Background';
-import Paper from '../shared/Paper';
-import Input from '../shared/Input';
-import { ReactComponent as EggIcon }  from '../../assets/img/eggIcon.svg';
-import { Yellow, White } from '../../constants/colors';
+import Link from 'components/shared/Link';
+import Background from 'components/shared/Background';
+import Paper from 'components/shared/Paper';
+import Input from 'components/shared/Input';
+import { ReactComponent as EggIcon }  from 'assets/img/eggIcon.svg';
+import { Yellow, White } from 'constants/colors';
 
 const NewWikiButton = styled.button`
     border: none;
