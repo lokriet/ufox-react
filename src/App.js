@@ -3,6 +3,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 
 import Login from 'components/Login';
 import Dashboard from 'components/Dashboard';
+import Canvas from 'components/Map/Canvas';
 
 function App() {
   return (
@@ -10,6 +11,9 @@ function App() {
       <Switch>
         <Route path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route path="/map">
+          <Canvas />
         </Route>
         <Route path="/login">
           <Login />
