@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const useZoomPan = (nodeRef) => {
+const useZoomPan = (nodeRef, imageSize) => {
   const [currentPan, setCurrentPan] = useState({x: 0, y: 0});
   const [currentZoom, setCurrentZoom] = useState(1);
 
@@ -18,20 +18,28 @@ const useZoomPan = (nodeRef) => {
   //   return {x: 0, y: 0};
   // }
 
+
   const onPanStart = (event) => {
     setIsPanning(true);
     setPrevPanMousePos({ x: event.offsetX, y: event.offsetY });
   };
 
   const onPanMove = (event) => {
+
+    const nodeRect = nodeRef.current.getBoundingClientRect();
+    const maxPan = {
+      x: Math.max(0, imageSize.width - nodeRect.width),
+      y: Math.max(0, imageSize.height - nodeRect.height)
+    };
+
     const newPan = {
-      x: currentPan.x - (event.offsetX - prevPanMousePos.x),
-      y: currentPan.y - (event.offsetY - prevPanMousePos.y)
+      x: Math.min(maxPan.x, Math.max(0, currentPan.x - (event.offsetX - prevPanMousePos.x))),
+      y: Math.min(maxPan.y, Math.max(0, currentPan.y - (event.offsetY - prevPanMousePos.y)))
     };
     setCurrentPan(newPan);
     setPrevPanMousePos({ x: event.offsetX, y: event.offsetY });
-    console.log('panning', event.offsetX, event.offsetY, prevPanMousePos, newPan);
-    console.log(event.nativeEvent);
+    // console.log('panning', event.offsetX, event.offsetY, prevPanMousePos, newPan);
+    // console.log(event.nativeEvent);
   }
 
   const onPanEnd = () => {
