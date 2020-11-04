@@ -4,10 +4,10 @@ import useZoomPan from './useZoomPan';
 
 const Canvas = (props) => {
   const [image, setImage] = useState(null);
-  const [imageSize, setImageSize] = useState({width: 0, height: 0});
+  const [imageSize, setImageSize] = useState(null);
   const canvasRef = useRef();
-  const divRef = useRef();
-  const { events, pan } = useZoomPan(divRef, imageSize);
+  const containerRef = useRef();
+  const { pan, zoom } = useZoomPan(containerRef, imageSize);
 
   useEffect(() => {
     const imgUrl =
@@ -21,38 +21,43 @@ const Canvas = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    window.addEventListener('mouseup', events.onMouseUp);
-    return () => {
-      window.removeEventListener('mouseup', events.onMouseUp);
-    }
-  }, [events]);
+  // useEffect(() => {
+  //   window.addEventListener('mouseup', events.onMouseUp);
+  //   return () => {
+  //     window.removeEventListener('mouseup', events.onMouseUp);
+  //   }
+  // }, [events]);
 
   useEffect(() => {
-    if (image) {
+    if (image && imageSize) {
       const canvas = canvasRef.current;
       const context = canvas.getContext('2d');
 
+      context.save();
+      context.scale(zoom, zoom);
       //Our draw come here
       // draw(context);
       context.drawImage(
         image,
         pan.x,
         pan.y,
-        canvas.width,
-        canvas.height,
+        imageSize.width,
+        imageSize.height,
         0,
         0,
-        canvas.width,
-        canvas.height
+        imageSize.width,
+        imageSize.height
       );
+      context.restore();
     }
     // console.log('new pan', pan.x, pan.y);
-  }, [image, pan.x, pan.y]);
+  }, [image, imageSize, pan.x, pan.y, zoom]);
 
   return (
-    <div ref={divRef} {...events} style={{ margin: '30px 50px' }}>
-      <canvas ref={canvasRef} width={1000} height={800} />
+    <div>
+      <div ref={containerRef} style={{ margin: '30px 50px' }}>
+        <canvas ref={canvasRef} width={1000} height={800} />
+      </div>
     </div>
   );
 };
